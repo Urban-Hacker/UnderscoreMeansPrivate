@@ -2,6 +2,8 @@
 
 Compared to other hacks and solutions to add private / public notion to GDscript, **UnderscoreMeansPrivate** respects Godot convention, thus the code produced is valid GDscript. 
 
+> ⚠️ Currently the plugin will force quite your project if it finds a script attempting to access a private member. In the future we plan to enable an option to allow dry run.
+
 ## Public getter
     extends Node
     var _player_name:string
