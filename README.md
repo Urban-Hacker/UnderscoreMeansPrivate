@@ -59,8 +59,10 @@ Sometime you might want to disable the script within a specific file, simply add
 * You cannot easily click on the error message.
 * This script is trivial to bypass (eg: you could use a trick like "." + "_" like we used in the script. It’s not meant to be a perfect solution but it enables to enforce the rules in most case.
 
-# Future features
+# Planned features
 
+* Refactor the script ✔️
+* Open source the script ✔️
 * Add the option to do a dry run (do no prevent the game to start if errors are detected).
 * Expose in the settings the various rules to allow to easily enable / disable them in your project
 * Improve the way we check certain rules
