@@ -26,6 +26,44 @@ Presently, the addon enforces two additional rules.
 
 More tests might be added in the future.
 
+# Documentation
+
+Compared to other hacks and solutions to add private / public notion to GDscript, **UnderscoreMeansPrivate** respects Godot convention, thus the code produced is valid GDscript. 
+
+## Public getter
+    extends Node
+    var _player_name:string
+
+    func get_player_name() -> string:
+        return _player_name
+
+## Public setter
+    extends Node
+    var _player_name:string
+
+    func set_player_name(name):
+        _player_name = name
+
+## Disabling checks
+Sometime you might want to disable the script within a specific file, simply add the comment **#!STRICT=false** as the first line of your script.
+
+    #!STRICT=false
+    extends Node
+    ...
+
+> Be aware that this enable the specific script to access any variable from any other script
+
 # Limitations
 
-This script is trivial to bypass (eg: you could use a trick like "." + "_" like we used in the script. It’s not meant to be a perfect solution but it enables to enforce the rules in most case.
+* Currently sadly you cannot do a dry run (if you enable the script you must fix all the issues before you can start the game)
+* You cannot easily click on the error message.
+* This script is trivial to bypass (eg: you could use a trick like "." + "_" like we used in the script. It’s not meant to be a perfect solution but it enables to enforce the rules in most case.
+
+# Future features
+
+* Add the option to do a dry run (do no prevent the game to start if errors are detected).
+* Expose in the settings the various rules to allow to easily enable / disable them in your project
+* Improve the way we check certain rules
+* Check for private functions return type
+* Check for function parameters type
+* Find a way to make it possible to click on the log message to access the file & line of the error
