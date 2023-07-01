@@ -12,6 +12,28 @@ Compared to other hacks and solutions to add private / public notion to GDscript
 
 ## Examples
 
+### Make sure to specify types for class vars and methods
+
+UnderscoreMeansPrivate will force you to specify the return type of any public function. This is to help you with auto completion and getting a quick idea of what is the interface when accessing from outside.
+
+    extends Node
+    var _some_private_data:int
+    var some_public_data:int
+    func get_data() -> int:
+       ...
+You can still use _ to turn the func into a private func and not have to specify the return
+
+    extends Node
+    func _get_data() -> void:
+       ...
+> ⚠️ Class variables must always be typed even if private
+
+### Making a private var
+    extends Node
+    var _bank_account:int
+
+> ⚠️ Do not use self to try to access inside the script itself. This is considered accessing an external variable.
+
 ### Public getter
     extends Node
     var _player_name:string
