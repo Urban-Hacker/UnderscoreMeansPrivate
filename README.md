@@ -61,8 +61,8 @@ Sometime you might want to disable the script within a specific file, simply add
 
 # Planned features
 
-* Refactor the script ✔️
-* Open source the script ✔️
+* Refactor the script ✔
+* Open source the script ✔
 * Add the option to do a dry run (do no prevent the game to start if errors are detected).
 * Expose in the settings the various rules to allow to easily enable / disable them in your project
 * Improve the way we check certain rules
