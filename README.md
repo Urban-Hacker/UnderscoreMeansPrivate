@@ -1,12 +1,11 @@
 # UnderscoreMeansPrivate
 
-> Addon to add the notion of public / private members for Godot 4.0+
+## Bringing the notion of public / private to Godot
 
-# Bringing the notion of public / private to Godot
+### TLDR
+Addon to add the notion of public / private members for Godot 4.0+. This is done by enforcing the Godot convention of using underscore (_) for private variables and methods.
 
-## TLDR!
-
-Enforce the Godot convention of using underscore (_) for private variables and methods.
+![Preview](preview.png)
 
 ## Long Explanation
 
@@ -34,8 +33,8 @@ More tests might be added in the future.
 
 # Planned features
 
-* Refactor the script ✔
-* Open source the script ✔
+* Refactor the script ✅
+* Open source the script ✅
 * Add the option to do a dry run (do no prevent the game to start if errors are detected).
 * Expose in the settings the various rules to allow to easily enable / disable them in your project
 * Improve the way we check certain rules

@@ -6,9 +6,14 @@
 @tool
 extends EditorPlugin
 
+const AUTOLOAD_NAME:String = "UnderscoreMeansPrivate"
+
+func _ready():
+	print("Underscore Means Private is enabled!")
+
 func _enter_tree():
-	pass
+	add_autoload_singleton(AUTOLOAD_NAME, "res://addons/UnderscoreMeansPrivate/PrivateProtection.gd")
 
 
 func _exit_tree():
-	pass
+	remove_autoload_singleton(AUTOLOAD_NAME)

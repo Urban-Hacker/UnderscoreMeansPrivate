@@ -5,7 +5,7 @@
 
 extends Node
 
-func _ready():
+func _ready(): 
 	var files = _get_dir_contents("res://")
 	var scripts = []
 	for file in files[0]:
@@ -31,7 +31,7 @@ func _check_file(path:String) -> int:
 	var line_count = 1
 
 	if lines[0] == "# !STRICT=false":
-		print("_ means private: Skipping: " + path)
+		print("  _ means private: Skipping: " + path)
 		return 0
 
 	for line in lines:
