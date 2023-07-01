@@ -1,4 +1,4 @@
-# Documentation
+# 📄 Documentation
 
 Compared to other hacks and solutions to add private / public notion to GDscript, **UnderscoreMeansPrivate** respects Godot convention, thus the code produced is valid GDscript. 
 
