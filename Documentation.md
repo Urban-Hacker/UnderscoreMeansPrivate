@@ -19,7 +19,7 @@ This plugin adds 3 settings in your project in the GDscript section of the setti
 
 ### Make sure to specify types for class vars and methods
 
-UnderscoreMeansPrivate will force you to specify the return type of any public function. This is to help you with auto completion and getting a quick idea of what is the interface when accessing from outside.
+UnderscoreMeansPrivate will force you to specify the return type of any public function. This is to help you with auto completion and getting a quick idea of what is the interface when accessing a class from outside.
 
     extends Node
     var _some_private_data:int
