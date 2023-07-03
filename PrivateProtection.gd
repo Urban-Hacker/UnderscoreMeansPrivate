@@ -8,6 +8,7 @@ extends Node
 const _SETTING_LOCATION:String = "debug/gdscript/Underscore_Means_Private/"
 const _STRICT:String = _SETTING_LOCATION + "force_project_to_abort_if_errors"
 const _IGNORE_ADDONS:String = _SETTING_LOCATION + "ignore_addons"
+const _VERBOSE:String = _SETTING_LOCATION + "verbose"
 
 func _ready():
 	var files = _get_dir_contents("res://")
@@ -17,7 +18,8 @@ func _ready():
 		if (file.begins_with("res:///addons/") and ProjectSettings.get_setting(_IGNORE_ADDONS, true)):
 			break
 		if file.ends_with("gd"):
-			print(file)
+			if ProjectSettings.get_setting(_VERBOSE):
+				print("  _ means private: Scheduled for checking: " + file)
 			scripts.append(file)
 	
 	var test_passed = 0
@@ -29,6 +31,8 @@ func _ready():
 		
 		if ProjectSettings.get_setting(_STRICT):
 			get_tree().quit()
+
+
 
 func _check_file(path:String) -> int:
 	var data_file = FileAccess.open(path, FileAccess.READ)
