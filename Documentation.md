@@ -2,13 +2,18 @@
 
 Compared to other hacks and solutions to add private / public notion to GDscript, **UnderscoreMeansPrivate** respects Godot convention, thus the code produced is valid GDscript. 
 
-> ⚠️ Currently the plugin will force quite your project if it finds a script attempting to access a private member. In the future we plan to enable an option to allow dry run.
+> ⚠️ If **force_project_to_abort_if_errors** is enabled the plugin will force quite your project if it finds a script attempting to access a private member.
 
 ## Setup
 
 * Like any other Godot plugin, simply download or clone this repository.
 * Place its folder into the **addons** directory of your godot project. Typically its in **ProjectDirectory/addons/**.
 * Go in Project > Project Settings > Plugins and enable it.
+
+This plugin adds 3 settings in your project:
+* **force_project_to_abort_if_errors** Set to false by default, will abort your project when errors are detected.
+* **ignore_addons** Set to true by default, will ignore scripts in the addons folder.
+* **verbose** Set to false by default, will display the list of all files that are checked.
 
 ## Examples
 
