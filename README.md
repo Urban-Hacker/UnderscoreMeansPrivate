@@ -30,8 +30,8 @@ More rules might be added in the future.
 
 # Limitations
 
-* ~~Currently sadly you cannot do a dry run (if you enable the script you must fix all the issues before you can start the game)~~ It is now possible to run without aborting the game.
-* You cannot easily click on the error message.
+* ~~Currently sadly you cannot do a dry run (if you enable the script you must fix all the issues before you can start the game)~~. It is now possible to run without aborting the game.
+* You cannot easily click on the error message to access the line where the error was detected.
 * This script is trivial to bypass (eg: you could use a trick like "." + "_" like we used in the script.
 * It’s not meant to be a perfect solution but it enables to enforce the rules in most case.
 
