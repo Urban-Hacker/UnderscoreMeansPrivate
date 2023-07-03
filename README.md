@@ -38,8 +38,8 @@ More tests might be added in the future.
 
 * Refactor the script ✅
 * Open source the script ✅
-* Add the option to do a dry run (do no prevent the game to start if errors are detected).
-* Expose in the settings the various rules to allow to easily enable / disable them in your project
+* Add the option to do a dry run (do no prevent the game to start if errors are detected). ✅
+* Expose in the settings the various rules to allow to easily enable / disable them in your project. ✅
 * Improve the way we check certain rules
 * Check for private functions return type
 * Check for function parameters type
