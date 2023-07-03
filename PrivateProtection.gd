@@ -5,11 +5,19 @@
 
 extends Node
 
-func _ready(): 
+const _SETTING_LOCATION:String = "debug/gdscript/Underscore_Means_Private/"
+const _STRICT:String = _SETTING_LOCATION + "force_project_to_abort_if_errors"
+const _IGNORE_ADDONS:String = _SETTING_LOCATION + "ignore_addons"
+
+func _ready():
 	var files = _get_dir_contents("res://")
 	var scripts = []
 	for file in files[0]:
+		#and ProjectSettings.get_setting(_IGNORE_ADDONS)
+		if (file.begins_with("res:///addons/") and ProjectSettings.get_setting(_IGNORE_ADDONS, true)):
+			break
 		if file.ends_with("gd"):
+			print(file)
 			scripts.append(file)
 	
 	var test_passed = 0
@@ -18,7 +26,9 @@ func _ready():
 	
 	if test_passed > 0:
 		printerr("_ We found ", test_passed, " error(s)")
-		get_tree().quit()
+		
+		if ProjectSettings.get_setting(_STRICT):
+			get_tree().quit()
 
 func _check_file(path:String) -> int:
 	var data_file = FileAccess.open(path, FileAccess.READ)
