@@ -10,7 +10,7 @@ Compared to other hacks and solutions to add private / public notion to GDscript
 * Place its folder into the **addons** directory of your godot project. Typically its in **ProjectDirectory/addons/**.
 * Go in Project > Project Settings > Plugins and enable it.
 
-This plugin adds 3 settings in your project:
+This plugin adds 3 settings in your project in the GDscript section of the settings (you must enable advanced to access it):
 * **force_project_to_abort_if_errors**: Set to false by default, will abort your project when errors are detected.
 * **ignore_addons**: Set to true by default, will ignore scripts in the addons folder.
 * **verbose**: Set to false by default, will display the list of all files that scheduled checked. In the future we might display more debug information.
