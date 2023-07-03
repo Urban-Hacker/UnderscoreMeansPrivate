@@ -5,7 +5,7 @@
 ![Icon](icon.png)
 
 ### TLDR
-Addon to add the notion of public / private members for Godot 4.0+. This is done by enforcing the Godot convention of using underscore (_) for private variables and methods. Check the [documentation](Documentation.md) for more information.
+Underscore Means Private is an addon to add the notion of public / private members for Godot 4.0+. This is done by enforcing the Godot convention of using underscore (_) for private variables and methods. Check the [documentation](Documentation.md) for more information.
 
 
 ![Preview](preview.png)
