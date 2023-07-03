@@ -62,4 +62,4 @@ Sometime you might want to disable the script within a specific file, simply add
     extends Node
     ...
 
-> ⚠️ Be aware that this enable the specific script to access any variable from any other script
+> ⚠️ Be aware that this enable the specific script to access any variable from any other script, thus bypassing any type of protection set in other files.
