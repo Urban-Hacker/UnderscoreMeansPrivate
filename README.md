@@ -1,4 +1,4 @@
-# UnderscoreMeansPrivate
+# Underscore Means Private
 
 ## Bringing the notion of public / private to Godot
 
