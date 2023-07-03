@@ -29,7 +29,9 @@ UnderscoreMeansPrivate will force you to specify the return type of any public f
 You can still use _ to turn the func into a private func and not have to specify the return
 
     extends Node
-    func _get_data() -> void:
+    var _some_private_data:int
+    var some_public_data:int
+    func _get_data():
        ...
 > ⚠️ Class variables must always be typed even if private
 
