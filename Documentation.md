@@ -1,6 +1,6 @@
 # 📄 Documentation
 
-Compared to other hacks and solutions to add private / public notion to GDscript, **UnderscoreMeansPrivate** respects Godot convention, thus the code produced is valid GDscript. 
+Compared to other hacks and solutions to add private / public notion to GDscript, **UnderscoreMeansPrivate** respects Godot convention, thus the code produced is valid GDscript. If you disable the addon, all your scripts will continue to work unaffected.
 
 > ⚠️ If **force_project_to_abort_if_errors** is enabled the plugin will force quite your project if it finds a script attempting to access a private member.
 
