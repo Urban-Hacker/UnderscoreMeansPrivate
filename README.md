@@ -24,9 +24,9 @@ This convention is not enforced by the language itself, this is where this addon
 
 Presently, the addon enforces two additional rules.
 * vars and consts of a class must specify a type to help with auto completion
-* publicly accessible func of a class must specify a return type
+* publicly accessible functions of a class must specify a return type
 
-More tests might be added in the future.
+More rules might be added in the future.
 
 # Limitations
 
